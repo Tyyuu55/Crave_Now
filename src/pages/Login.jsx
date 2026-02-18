@@ -20,7 +20,7 @@ const PageShell = ({ children }) => (
     animate={{ opacity: 1, y: 0 }}
     exit={{ opacity: 0, y: 12 }}
     transition={{ duration: 0.25, ease: 'easeOut' }}
-    className="flex min-h-screen items-center justify-center bg-gradient-to-b from-[#FFF5EB] via-[#FFF9F2] to-[#FFFAF5] px-4"
+    className="flex min-h-screen w-full items-center justify-center bg-gradient-to-b from-[#FFF5EB] via-[#FFF9F2] to-[#FFFAF5] px-4 overflow-x-hidden"
   >
     {children}
   </motion.main>
@@ -28,9 +28,11 @@ const PageShell = ({ children }) => (
 
 const LogoBlock = () => (
   <div className="mb-6 text-center">
-    <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-3xl bg-primary text-white shadow-soft-card">
-      <span className="font-display-alt text-2xl leading-none">CL</span>
-    </div>
+    <img
+      src="/252.jpg"
+      alt="Logo"
+      className="mb-3 h-16 w-auto object-contain mx-auto"
+    />
     <div className="font-display-alt text-2xl font-semibold">CraveLane</div>
     <p className="mt-1 text-xs uppercase tracking-[0.22em] text-muted">
       Cravings Delivered

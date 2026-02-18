@@ -25,7 +25,7 @@ const AppShell = () => {
   const hideNav = location.pathname === '/login' || location.pathname === '/signup'
 
   return (
-    <div className="min-h-screen app-bg text-dark font-body flex flex-col">
+    <div className="min-h-screen w-full app-bg text-dark font-body flex flex-col">
       {!hideNav && <Navbar />}
       <div className="flex-1">
         <AnimatePresence mode="wait">

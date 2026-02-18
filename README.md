@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## CraveLane – Food Ordering E‑commerce
 
 CraveLane is a warm, street–food inspired food ordering web app built with **React + Vite + TailwindCSS**, using **json-server** as a mock backend.
@@ -59,3 +60,6 @@ The frontend expects an environment variable for the API base URL:
 
 You can tweak `mock-server/db.json` to add more restaurants, menu items, or demo users as needed.
 
+=======
+# Crave_Now
+>>>>>>> e41b5464c0815c361cf6da2aa1ecd7e043215701

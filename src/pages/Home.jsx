@@ -62,8 +62,8 @@ const heroWords = ['Cravings', 'Delivered', 'Warm.']
 
 const Hero = ({ search, onSearchChange }) => {
   return (
-    <section className="hero-noise hero-gradient hero-clip rounded-b-[3rem] pb-10 pt-10 text-white shadow-soft-card">
-      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 md:flex-row md:items-center">
+    <section className="hero-noise hero-gradient hero-clip rounded-b-[3rem] pb-10 pt-10 text-white shadow-soft-card w-full relative overflow-hidden">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 md:px-16 md:flex-row md:items-center">
         <div className="relative flex-1 space-y-6">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em]">
             <span className="h-1.5 w-1.5 rounded-full bg-secondary" />

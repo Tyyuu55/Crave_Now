@@ -35,7 +35,7 @@ export const Navbar = () => {
   const isActive = (path) => location.pathname === path
 
   return (
-    <header className="sticky top-0 z-40 frosted-nav">
+    <header className="sticky top-0 z-40 w-full frosted-nav">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <div className="flex items-center gap-3">
           <Link to="/" className="flex items-center gap-2">
