@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Syne:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  --color-primary: #ff5200;
+  --color-secondary: #ffb347;
+  --color-bg: #fffaf5;
+  --color-card: #fff0e6;
+  --color-dark: #1a1a1a;
+  --color-muted: #8a7e77;
+
+  font-family: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-dark);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-display {
+  font-family: 'Playfair Display', 'DM Sans', system-ui, serif;
+}
+
+.font-display-alt {
+  font-family: 'Syne', system-ui, sans-serif;
+}
+
+.font-body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+}
+
+.font-mono-accent {
+  font-family: 'Space Mono', ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, 'Liberation Mono', 'Courier New', monospace;
+}
+
+.app-bg {
+  background-color: var(--color-bg);
+}
+
+.card-bg {
+  background-color: var(--color-card);
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #ff5200 0%, #ffb347 55%, #fff0e6 100%);
+}
+
+.hero-clip {
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 60% 90%, 0 100%);
+}
+
+.hero-noise {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-noise::before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  inset: -50px;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='noStitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.18'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+
+.frosted-nav {
+  background: rgba(255, 250, 245, 0.86);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 148, 94, 0.12);
+}
+
+.card-hover {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.14);
+}
+
+.image-zoom {
+  transition: transform 260ms ease;
+}
+
+.card-hover:hover .image-zoom {
+  transform: scale(1.05);
+}
+
+.scrollbar-soft::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.scrollbar-soft::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-soft::-webkit-scrollbar-thumb {
+  background: rgba(255, 82, 0, 0.5);
+  border-radius: 999px;
+}
+
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    #ffe4cc,
+    #fff5ea,
+    #ffe4cc
+  );
+  background-size: 200% 100%;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.veg-indicator,
+.nonveg-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+  border: 1px solid currentColor;
+}
+
+.veg-indicator {
+  color: #1faa59;
+}
+
+.nonveg-indicator {
+  color: #d32f2f;
+}
+
+.section-title {
+  letter-spacing: 0.04em;
+}
+

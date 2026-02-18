@@ -1,0 +1,263 @@
+{
+  "users": [
+    {
+      "name": "shreeya khatri",
+      "email": "shreeyakhtr@gmail.com",
+      "password": "Shree@123",
+      "id": 1
+    },
+    {
+      "name": "shreeya",
+      "email": "shreeyakhtr@gmail.com",
+      "password": "Shree@123",
+      "id": 2
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Gully Grill Co.",
+      "cuisines": [
+        "North Indian",
+        "Tandoor",
+        "Street Rolls"
+      ],
+      "tags": [
+        "rolls",
+        "bowls"
+      ],
+      "rating": 4.6,
+      "ratingCount": 2300,
+      "deliveryTime": 28,
+      "averagePrice": 450,
+      "location": "Bandra West",
+      "offer": "20% OFF on smoky grills",
+      "image": "https://images.pexels.com/photos/3756523/pexels-photo-3756523.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Bombay Bao & Bowls",
+      "cuisines": [
+        "Asian",
+        "Bao",
+        "Rice Bowls"
+      ],
+      "tags": [
+        "bowls",
+        "burgers"
+      ],
+      "rating": 4.5,
+      "ratingCount": 1800,
+      "deliveryTime": 24,
+      "averagePrice": 520,
+      "location": "Khar",
+      "offer": "Flat ₹120 OFF on combos",
+      "image": "https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Midnight Momo Cart",
+      "cuisines": [
+        "Tibetan",
+        "Fast Food"
+      ],
+      "tags": [
+        "bowls",
+        "quick"
+      ],
+      "rating": 4.3,
+      "ratingCount": 950,
+      "deliveryTime": 22,
+      "averagePrice": 350,
+      "location": "Andheri",
+      "offer": "Buy 1 Get 1 Momos",
+      "image": "https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Coal & Crumbs Pizzeria",
+      "cuisines": [
+        "Pizza",
+        "Desserts"
+      ],
+      "tags": [
+        "pizza",
+        "dessert"
+      ],
+      "rating": 4.7,
+      "ratingCount": 3200,
+      "deliveryTime": 32,
+      "averagePrice": 650,
+      "location": "Lower Parel",
+      "offer": "Free dessert on orders above ₹799",
+      "image": "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": 101,
+      "restaurantId": 1,
+      "name": "Charcoal paneer tikka roll",
+      "description": "Smoky paneer tikka wrapped in a buttery rumali roti with mint mayo.",
+      "price": 260,
+      "isVeg": true,
+      "spicy": true,
+      "category": "Signature rolls",
+      "image": "https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg",
+      "badge": "Best-seller"
+    },
+    {
+      "id": 102,
+      "restaurantId": 1,
+      "name": "Lahori chicken seekh roll",
+      "description": "Juicy chicken seekh with pickled onions and house chutney.",
+      "price": 290,
+      "isVeg": false,
+      "spicy": true,
+      "category": "Signature rolls",
+      "image": "https://images.pexels.com/photos/461431/pexels-photo-461431.jpeg",
+      "badge": "Smoky fav"
+    },
+    {
+      "id": 103,
+      "restaurantId": 1,
+      "name": "Tandoori veg platter bowl",
+      "description": "Grilled veggies over jeera rice with dal makhani.",
+      "price": 340,
+      "isVeg": true,
+      "spicy": false,
+      "category": "Tandoor bowls",
+      "image": "https://images.pexels.com/photos/1117862/pexels-photo-1117862.jpeg"
+    },
+    {
+      "id": 201,
+      "restaurantId": 2,
+      "name": "Crispy tofu bao pair",
+      "description": "Twin baos with chilli garlic tofu, pickled cucumber and sesame.",
+      "price": 320,
+      "isVeg": true,
+      "spicy": true,
+      "category": "Baos",
+      "image": "https://images.pexels.com/photos/4109130/pexels-photo-4109130.jpeg",
+      "badge": "House special"
+    },
+    {
+      "id": 202,
+      "restaurantId": 2,
+      "name": "Smoked chicken teriyaki bowl",
+      "description": "Sticky rice, smoked chicken, charred broccoli and onsen egg.",
+      "price": 420,
+      "isVeg": false,
+      "spicy": false,
+      "category": "Rice bowls",
+      "image": "https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg"
+    },
+    {
+      "id": 203,
+      "restaurantId": 2,
+      "name": "Gochujang paneer bowl",
+      "description": "Crispy paneer, gochujang glaze, kimchi and scallions.",
+      "price": 390,
+      "isVeg": true,
+      "spicy": true,
+      "category": "Rice bowls",
+      "image": "https://images.pexels.com/photos/3731474/pexels-photo-3731474.jpeg"
+    },
+    {
+      "id": 301,
+      "restaurantId": 3,
+      "name": "Tandoori chicken momos",
+      "description": "Charred momos tossed in smoky tikka masala.",
+      "price": 260,
+      "isVeg": false,
+      "spicy": true,
+      "category": "Street momos",
+      "image": "https://images.pexels.com/photos/6539850/pexels-photo-6539850.jpeg",
+      "badge": "Hot pick"
+    },
+    {
+      "id": 302,
+      "restaurantId": 3,
+      "name": "Veg steam momos",
+      "description": "Classic veg momos served with red chilli chutney.",
+      "price": 190,
+      "isVeg": true,
+      "spicy": false,
+      "category": "Street momos",
+      "image": "https://images.pexels.com/photos/6937445/pexels-photo-6937445.jpeg"
+    },
+    {
+      "id": 303,
+      "restaurantId": 3,
+      "name": "Chilli garlic fries",
+      "description": "Crispy fries tossed in chilli garlic butter.",
+      "price": 180,
+      "isVeg": true,
+      "spicy": true,
+      "category": "Sides",
+      "image": "https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg"
+    },
+    {
+      "id": 401,
+      "restaurantId": 4,
+      "name": "Coal fired margherita",
+      "description": "Slow-proofed dough, san marzano sauce and basil.",
+      "price": 530,
+      "isVeg": true,
+      "spicy": false,
+      "category": "Pizzas",
+      "image": "https://images.pexels.com/photos/905847/pexels-photo-905847.jpeg",
+      "badge": "Stone baked"
+    },
+    {
+      "id": 402,
+      "restaurantId": 4,
+      "name": "Smoked chicken & chilli pizza",
+      "description": "Smoked chicken, jalapeños and mozzarella.",
+      "price": 590,
+      "isVeg": false,
+      "spicy": true,
+      "category": "Pizzas",
+      "image": "https://images.pexels.com/photos/4109088/pexels-photo-4109088.jpeg"
+    },
+    {
+      "id": 403,
+      "restaurantId": 4,
+      "name": "Baked cheesecake slice",
+      "description": "Warm vanilla cheesecake with biscuit base.",
+      "price": 260,
+      "isVeg": true,
+      "spicy": false,
+      "category": "Desserts",
+      "image": "https://images.pexels.com/photos/461419/pexels-photo-461419.jpeg",
+      "badge": "Free with offer"
+    }
+  ],
+  "orders": [
+    {
+      "userId": 1,
+      "items": [
+        {
+          "id": 401,
+          "name": "Coal fired margherita",
+          "price": 530,
+          "quantity": 1
+        },
+        {
+          "id": 402,
+          "name": "Smoked chicken & chilli pizza",
+          "price": 590,
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1120,
+      "deliveryFee": 0,
+      "taxes": 56,
+      "total": 1176,
+      "createdAt": "2026-02-18T16:28:57.143Z",
+      "restaurantId": 4,
+      "restaurantName": "Coal & Crumbs Pizzeria",
+      "id": 1
+    }
+  ]
+}
